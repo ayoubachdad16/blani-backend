@@ -15,7 +15,7 @@ const sendVerificationEmail = async (toEmail, toName, token) => {
       <p>Bonjour ${toName},</p>
       <p>Merci de vous être inscrit sur Blani.</p>
       <p>Veuillez cliquer sur le lien ci-dessous pour valider votre adresse email :</p>
-      <a href="http://localhost:3000/verify-email?token=${token}">Vérifier mon adresse</a>
+      <a href="https://blani-backend.onrender.com/verify-email?token=${token}">Vérifier mon adresse</a>
     `,
   };
 

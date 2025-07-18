@@ -54,7 +54,7 @@ exports.verifyEmail = async (req, res) => {
     user.verificationToken = undefined;
     await user.save();
 
-    return res.redirect('http://localhost:3000/email-verified');
+    return res.redirect('https://blani-backend.onrender.com/email-verified');
   } catch (err) {
     console.error(err);
     res.status(500).send("Erreur lors de la vérification de l'email.");

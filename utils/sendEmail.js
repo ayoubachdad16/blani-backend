@@ -6,7 +6,7 @@ const client = new SibApiV3Sdk.TransactionalEmailsApi();
 client.setApiKey(SibApiV3Sdk.TransactionalEmailsApiApiKeys.apiKey, process.env.BREVO_API_KEY);
 
 async function sendVerificationEmail(to, token) {
-  const link = `http://localhost:5000/api/auth/verify-email?token=${token}`;
+  const link = `https://blani-backend.onrender.com/api/auth/verify-email?token=${token}`;
 
 
   await client.sendTransacEmail({
